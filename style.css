@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MOBILE FIRST DESIGN */
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+/* COLUMNS */
+.column {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.column h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3em;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.column p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+    line-height: 25px;
+    padding: 20px 50px;
+    
+}
+
+.column img {
+    padding-top: 50px;
+    padding-left: 50px;
+    width: 40%;
+}
+
+.column input {
+    background-color: hsla(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 25px;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid white;
+}
+
+#col1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#col2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#col3 {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* CARD BUTTON */
+.button1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.button1:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    border-color: white;
+}
+
+.button2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.button2:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    border-color: white;
+}
+
+.button3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.button3:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border-color: white;
+}
+
+
+
+@media (min-width:900px) {
+    .container {
+        width: 900px;
+        flex-direction: row;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .column {
+        width: 320px;
+    }
+
+    #col1 {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0;
+    }
+
+    #col3 {
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+
+    .column input {
+        margin-top: 50px;
+    }   
+   
+}
+
